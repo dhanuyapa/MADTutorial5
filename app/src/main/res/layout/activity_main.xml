@@ -9,13 +9,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+
+        android:layout_margin="16dp"
+        >
 
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tvTitle" />
+            android:text="@string/tvTitle"
+            android:textSize="34sp"
+            android:textAlignment="center"
+            />
 
         <EditText
             android:id="@+id/editStudentId"
@@ -23,7 +29,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/edtStudentID"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textSize="20sp"
+            />
 
         <TextView
             android:id="@+id/tvYear"
@@ -36,38 +44,52 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:entries="@array/years"
+            android:scrollbarSize="20sp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
             />
 
         <TextView
             android:id="@+id/tvSemester"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tvYear" />
+            android:text="@string/tvYear"
+            android:textSize="20sp"
+            />
 
         <Spinner
             android:id="@+id/spnSemester"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:entries="@array/semesters"
+            android:scrollbarSize="20sp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
             />
 
         <CheckBox
             android:id="@+id/cbAgree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cbAgreement" />
+            android:text="@string/cbAgreement"
+            android:textSize="20sp"
+            />
 
         <Button
             android:id="@+id/btnConfirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btnSubmit" />
+            android:text="@string/btnSubmit"
+            android:scrollbarSize="20sp"
+            />
 
         <Button
             android:id="@+id/btnCancel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btnCancel" />
+            android:text="@string/btnCancel"
+            android:textSize="20sp"
+            />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
